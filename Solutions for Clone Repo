@@ -1,0 +1,22 @@
+1. clone新仓库
+
+- git clone git@github.com:Insight-Group/mfin7036.git
+
+2. 复制 main 分支文件
+
+- cd mfin7036
+- git checkout main
+- 在 MFIN7036-Blog 仓库的 main分支，把所有文件copy过来（不包括 .git 文件夹以及ZQY的内容）
+- git add .
+- git commit -m "feat - code and dataset"
+- git push
+
+3. 复制 gh-pages 分支文件
+
+- 仍然在 mfin7036
+- git checkout -b gh-pages
+- 删除文件夹下的内容（除.git）
+- 在 MFIN7036-Blog 仓库的 gh-pages 分支，把所有文件copy过来（不包括 .git 文件夹以及ZQY的内容）
+- git add .
+- git commit -m "feat - some blogs"
+- git push --set-upstream origin gh-pages
