@@ -20,3 +20,4 @@
 - git add .
 - git commit -m "feat - some blogs"
 - git push --set-upstream origin gh-pages
+- ******
